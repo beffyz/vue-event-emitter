@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <TitleBtnClickChangeBox class="title__box" />
+          <TitleInputChangeBox class="title__box" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+
+import TitleBtnClickChangeBox from "@/components/TitleBtnClickChangeBox.vue";
+import TitleInputChangeBox from "@/components/TitleInputChangeBox.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    TitleInputChangeBox,
+    TitleBtnClickChangeBox,
   },
 });
 </script>
@@ -18,10 +29,14 @@ export default defineComponent({
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.title__box {
+  max-width: 350px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 </style>
