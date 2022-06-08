@@ -15,7 +15,7 @@
 import { defineComponent } from "vue";
 
 import TitleDescriptionClickChangeForm from "@/components/TitleDescriptionClickChangeForm/TitleDescriptionClickChangeForm";
-import TitleDescriptionClickChangeText from "@/components/TitleDescriptionClickChangeText/TitleDescriptionClickChangeText";
+import TitleDescriptionClickChangeText from "@/components/TitleDescriptionChangeText/TitleDescriptionChangeText";
 export default defineComponent({
   name: "TitleDescriptionClickChangeBox",
   components: {

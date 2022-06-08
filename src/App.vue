@@ -11,6 +11,9 @@
 
         <div class="col-md-6">
           <TitleDescriptionClickChangeBox />
+          <TitleDescriptionInputChangeBox />
+          <ToggleColorBox />
+          <CheckboxToggleColorBox />
         </div>
       </div>
     </div>
@@ -25,10 +28,16 @@ import TitleInputChangeBox from "@/components/TitleInputChangeBox.vue";
 import ColorClickChangeBox from "@/components/ColorClickChangeBox.vue";
 import ColorInputChangeBox from "@/components/ColorInputChangeBox.vue";
 import TitleDescriptionClickChangeBox from "@/components/TitleDescriptionClickChangeBox.vue";
+import TitleDescriptionInputChangeBox from "@/components/TitleDescriptionInputChangeBox.vue";
+import ToggleColorBox from "@/components/ToggleColorBox.vue";
+import CheckboxToggleColorBox from "@/components/CheckboxToggleColorBox.vue";
 
 export default defineComponent({
   name: "App",
   components: {
+    CheckboxToggleColorBox,
+    ToggleColorBox,
+    TitleDescriptionInputChangeBox,
     TitleDescriptionClickChangeBox,
     ColorInputChangeBox,
     ColorClickChangeBox,

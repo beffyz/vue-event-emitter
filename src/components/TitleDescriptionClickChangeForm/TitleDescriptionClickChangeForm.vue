@@ -26,12 +26,10 @@ export default defineComponent({
   }),
   methods: {
     titleSubmitHandler() {
-      console.log(this.titleValue);
       this.$emit("changeTitle", this.titleValue);
       this.titleValue = "";
     },
     descriptionSubmitHandler() {
-      console.log(this.descriptionValue);
       this.$emit("changeDescription", this.descriptionValue);
       this.descriptionValue = "";
     },
