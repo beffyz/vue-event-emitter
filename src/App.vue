@@ -2,9 +2,15 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <TitleBtnClickChangeBox class="title__box" />
           <TitleInputChangeBox class="title__box" />
+          <ColorClickChangeBox class="color__box" />
+          <ColorInputChangeBox class="color__box" />
+        </div>
+
+        <div class="col-md-6">
+          <TitleDescriptionClickChangeBox />
         </div>
       </div>
     </div>
@@ -16,10 +22,16 @@ import { defineComponent } from "vue";
 
 import TitleBtnClickChangeBox from "@/components/TitleBtnClickChangeBox.vue";
 import TitleInputChangeBox from "@/components/TitleInputChangeBox.vue";
+import ColorClickChangeBox from "@/components/ColorClickChangeBox.vue";
+import ColorInputChangeBox from "@/components/ColorInputChangeBox.vue";
+import TitleDescriptionClickChangeBox from "@/components/TitleDescriptionClickChangeBox.vue";
 
 export default defineComponent({
   name: "App",
   components: {
+    TitleDescriptionClickChangeBox,
+    ColorInputChangeBox,
+    ColorClickChangeBox,
     TitleInputChangeBox,
     TitleBtnClickChangeBox,
   },
@@ -32,7 +44,18 @@ export default defineComponent({
 }
 
 .title__box {
-  max-width: 350px;
+  max-width: 450px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.color__box {
+  display: flex;
+  gap: 20px;
+  max-width: 450px;
   width: 100%;
   margin-top: 20px;
   border: 1px solid black;
